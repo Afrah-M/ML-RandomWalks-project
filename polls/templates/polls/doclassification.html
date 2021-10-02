@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Do Classification page</title>
+    
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+    
+  </head>
+  <body class=" dashboard" data-admin-utc-offset="0">
+    
+    
+    <!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/"> Sign In</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>admin</strong>.
+            
+                    
+                    <a href="/classfication/classfication">/ Download File </a> /
+                
+                <a href="/doclassification">Do Classification</a>/
+                    
+                    
+                
+                
+                <a href="/admin/password_change/">Change password</a> /
+                
+                <a href="/admin/logout/">Log out</a>
+            
+        </div>
+         </div>
+        
+       <div class="breadcrumbs">
+<a href="/admin/">Home</a>
+</div> 
+        
+   
+    <!-- END Header -->
+    
+    <form action="result" >
+      {% csrf_token %}
+      <div style="display:flex; flex-direction: row;">
+      <p>Bond length 1:</p>
+      <input style="margin-top:20px;" type="number"step="any" name="bond_length_1" value="0.253">
+      <br>
+      
+      <p>Angle 1:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_1"value="1.01229096615671">
+      <br>
+
+      <p>Bond length 2:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_2"value="0.458">
+      <br>
+      
+      <p>Angle 2:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_2"value="-0.174532925199433">
+      <br>
+
+</div>
+<div style="display:flex; flex-direction: row;">
+      <p>Bond length 3:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_3"value="0.958">
+      <br>
+      
+      <p>Angle 3:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_3"value="2.70526034059121">
+      <br>
+      
+      <p>Bond length 4:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_4"value="1.0652">
+      <br>
+      
+      <p>Angle 4:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_4"value="-0.785398163397448">
+      <br>
+      </div>
+      <div style="display:flex; flex-direction: row;">
+      <p>Bond length 5:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_5"value="1.478">
+      <br>
+      
+      <p>Angle 5:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_5"value="0.052359877559829">
+      <br>
+      
+      <p>Bond length 6:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_6"value="1.822">
+      <br>
+      
+      <p>Angle 6:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_6"value="-0.994837673636767">
+      <br>
+      
+      </div>
+      <div style="display:flex; flex-direction: row;">
+      <p>Bond length 7:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_7"value="1.971">
+      <br>
+      
+      <p>Angle 7:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_7"value="1.74532925199433">
+      <br>
+      
+      <p>Bond length 8:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_8"value="2.140">
+      <br>
+      
+      
+      <p>Angle 8:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_8"value="1.74532925199433">
+      <br>
+      </div>
+      <div style="display:flex; flex-direction: row;">
+      
+      <p>Bond length 9:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_9"value="2.224">
+      <br>
+      
+      <p>Angle 9:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="angle_9"value="-3.31612557878923">
+      <br>
+      
+      <p>Bond length 10:</p>
+      <input style="margin-top:20px;"type="number"step="any" name="bond_length_10"value="2.922">
+      <br>
+      </div>
+
+
+
+      <input style="margin-top:50px;margin-left:50%;"type="submit" value='Get Predictions'>
+    </form>
+  </body>
+</html>

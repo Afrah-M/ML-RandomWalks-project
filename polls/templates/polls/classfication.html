@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Classfication Page</title>
+ 
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+ 
+  </head>
+<body class=" dashboard" data-admin-utc-offset="0">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/"> Sign In</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>admin</strong>.
+            
+                    
+                    <a href="/classfication/classfication">/ Download File </a> /
+                
+                <a href="doclassification">Do Classification</a>/
+                    
+                    
+                
+                
+                <a href="/admin/password_change/">Change password</a> /
+                
+                <a href="/admin/logout/">Log out</a>
+            
+        </div>
+         </div>
+        
+       <div class="breadcrumbs">
+<a href="/admin/">Home</a>
+</div> 
+        
+   
+    <!-- END Header -->
+    
+    <form action="download" method="POST" style="margin-top:5%;margin-left:10%;">
+         {% csrf_token %} 
+  <input style="margin-right:20%"type="submit" name="gNB" value="Gaussian Naive Bayes" class="btn btn-success">
+ <input style="margin-right:22%"type="submit" name="knn" value="KN Neighbors" class="btn btn-success">
+<input type="submit" name="dtree" value="Descision Tree" class="btn btn-success"> 
+</form>
+
+<textarea rows= "8" style="text-align:center; margin-left:10%;margin-top:15%;margin-right:10%;font-size:large;">
+We have added a numeric abbreviation for each of the random walks classes, which are as follows:
+
+- Number 1 goes back to "simple random  walk"
+
+- Number 2 goes back to "directed random walk"
+
+- Number 3 goes back to "persistent random walk"
+</textarea>
+</body>
+</html>
+
+
+
+
